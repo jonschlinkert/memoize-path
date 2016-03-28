@@ -1,6 +1,6 @@
 # memoize-path [![NPM version](https://img.shields.io/npm/v/memoize-path.svg?style=flat)](https://www.npmjs.com/package/memoize-path) [![NPM downloads](https://img.shields.io/npm/dm/memoize-path.svg?style=flat)](https://npmjs.org/package/memoize-path) [![Build Status](https://img.shields.io/travis/jonschlinkert/memoize-path.svg?style=flat)](https://travis-ci.org/jonschlinkert/memoize-path)
 
-> Easily compose reusable file paths from memoized path segments.
+> Easily create reusable, stackable file paths from memoized path segments.
 
 ## Install
 

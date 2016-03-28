@@ -1,6 +1,6 @@
 {
   "name": "memoize-path",
-  "description": "Easily compose reusable file paths from memoized path segments.",
+  "description": "Easily create reusable, stackable file paths from memoized path segments.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/memoize-path",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
