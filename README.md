@@ -19,13 +19,20 @@ A function is returned when a string is passed on the arguments. Otherwise the m
 ```js
 var memo = require('memoize-path');
 
-var cwd = memo(process.cwd());
-// cwd is a function, since a string was passed
+/**
+ * When a string is passed, a function is returned
+ */
+
+var cwd = memo(process.cwd()); 
+
+// use `cwd`
 var foo = cwd('foo');
 var bar = cwd('bar');
 var baz = cwd('baz');
 
+// use `foo`
 var qux = foo('a/b/c');
+// use `qux`
 var fez = qux('x/y/z');
 
 /**
@@ -57,6 +64,23 @@ console.log(bar.path);
 //=> /User/dev/memo-path/bar
 console.log(baz.path);
 //=> /User/dev/memo-path/baz
+console.log(qux.path);
+//=> /User/dev/memo-path/foo/a/b/c
+console.log(fez.path);
+//=> /User/dev/memo-path/foo/a/b/c/x/y/z
+
+/**
+ * The parent directory is exposed as `.parent`
+ */
+
+console.log(cwd.path);
+//=> /User/dev
+console.log(foo.path);
+//=> /User/dev/memo-path
+console.log(bar.path);
+//=> /User/dev/memo-path
+console.log(baz.path);
+//=> /User/dev/memo-path
 console.log(qux.path);
 //=> /User/dev/memo-path/foo/a/b/c
 console.log(fez.path);
