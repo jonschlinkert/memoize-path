@@ -43,6 +43,7 @@
     ],
     "related": {
       "list": [
+        "parse-filepath",
         "is-absolute",
         "is-relative",
         "micromatch",
