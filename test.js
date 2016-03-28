@@ -34,7 +34,7 @@ describe('memoized path', function () {
     assert.equal(qux(), path.resolve('foo/bar/baz/qux'));
   });
 
-  it('should expose the memoized filepath on the `.cwd` property', function () {
+  it('should expose the memoized filepath on the `.path` property', function () {
     var foo = memoPath('foo');
     var bar = foo('bar');
     var baz = bar('baz');
