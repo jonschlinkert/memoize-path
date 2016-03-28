@@ -1,7 +1,7 @@
 {
   "name": "memoize-path",
   "description": "Easily create reusable, stackable file paths from memoized path segments.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/memoize-path",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/memoize-path",
@@ -25,8 +25,7 @@
     "gulp-format-md": "^0.1.7",
     "gulp-istanbul": "^0.10.3",
     "gulp-mocha": "^2.2.0",
-    "mocha": "^2.4.5",
-    "through2": "^2.0.1"
+    "mocha": "^2.4.5"
   },
   "keywords": [
     "memoize",
